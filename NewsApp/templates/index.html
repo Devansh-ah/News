@@ -79,8 +79,8 @@ $(function() {
 <div class="wrapper col2">
   <div id="featured_slide">
     
-     
         {% for i in top.articles %}
+        
         <div style="color: black;" class="featured_box">
           <center><h2 style="font-size: large;">{{i.title}}</h2></center>
         <div class="floater">
@@ -89,7 +89,7 @@ $(function() {
       <p class="readmore"><a href="{{i.url}}">Continue Reading&raquo;</a></p>
       <img src="{{i.urlToImage}}" alt="" /> 
     </div>
-
+   
       {% endfor %}
     
       
@@ -174,16 +174,18 @@ $(function() {
     </div>
     <div class="column">
       <div class="sponsors">
-        <h2>Site Sponsors</h2>
-        <div class="b_250"><a href="#"><img src="{% static 'NewsApp/images/250x250.gif' %}" alt="" /></a></div>
+        <h2>Categories</h2>
+        <div class="b_250"><a href="general.html"><img style="height: 250px; width:250px;" src="{% static 'NewsApp/images/general.png' %}" alt="" /></a></div>
         <div class="b_125">
           <ul>
-            <li><a href="#"><img src="{% static 'NewsApp/images/125x125.gif' %}" alt="" /></a></li>
-            <li><a href="#"><img src="{% static 'NewsApp/images/125x125.gif' %}" alt="" /></a></li>
-            <li><a href="#"><img src="{% static 'NewsApp/images/125x125.gif' %}" alt="" /></a></li>
-            <li><a href="#"><img src="{% static 'NewsApp/images/125x125.gif' %}" alt="" /></a></li>
-            <li><a href="#"><img src="{% static 'NewsApp/images/125x125.gif' %}" alt="" /></a></li>
-            <li class="last"><a href="#"><img src="{% static 'NewsApp/images/125x125.gif' %}" alt="" /></a></li>
+            <li><a href="entertainment.html"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/entertainment.png' %}" alt="" /></a></li>
+            <li><a href="business.html"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/business.png' %}" alt="" /></a></li>
+            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/sports.png' %}" alt="" /></a></li>
+            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/music.png' %}" alt="" /></a></li>
+            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/science.png' %}" alt="" /></a></li>
+            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/politics.png' %}" alt="" /></a></li>
+            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/health.png' %}" alt="" /></a></li>
+            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/technology.png' %}" alt="" /></a></li>
           </ul>
           <div class="clear"></div>
         </div>

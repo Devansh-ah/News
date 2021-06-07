@@ -11,7 +11,8 @@ def index(request):
     # science=requests.get('https://newsapi.org/v2/top-headlines?country=in&category=science&apiKey=9289ff62266d4b389cacb6d84f70d28f').json()
     # technology=requests.get('https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=9289ff62266d4b389cacb6d84f70d28f').json()
     # music=requests.get('https://newsapi.org/v2/top-headlines?country=in&category=music&apiKey=9289ff62266d4b389cacb6d84f70d28f').json()
-    # data=[business,sports,entertainment,health,politics,science,technology,music]
+    # general=requests.get('https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=9289ff62266d4b389cacb6d84f70d28f).json()
+    # data=[business,sports,entertainment,health,politics,science,technology,music,general]
     # return render(request,'index.html',{'data':data})
     top=requests.get('https://newsapi.org/v2/top-headlines?country=in&apiKey=9289ff62266d4b389cacb6d84f70d28f').json()
     return render(request,'index.html',{'top':top})
