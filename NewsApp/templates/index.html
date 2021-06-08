@@ -82,9 +82,9 @@ $(function() {
         {% for i in top.articles %}
         
         <div style="color: black;" class="featured_box">
-          <center><h2 style="font-size: large;">{{i.title}}</h2></center>
+          <!-- <center><h2 style="font-size: large;">{{i.title}}</h2></center> -->
         <div class="floater">
-        <p style="color: whitesmoke">{{i.description}}</p>
+        <p style="color: whitesmoke"><b>{{i.title}}:</b>{{i.description}}</p>
       </div>
       <p class="readmore"><a href="{{i.url}}">Continue Reading&raquo;</a></p>
       <img src="{{i.urlToImage}}" alt="" /> 
@@ -175,17 +175,17 @@ $(function() {
     <div class="column">
       <div class="sponsors">
         <h2>Categories</h2>
-        <div class="b_250"><a href="general.html"><img style="height: 250px; width:250px;" src="{% static 'NewsApp/images/general.png' %}" alt="" /></a></div>
+        <div class="b_250"><a href="general"><img style="height: 250px; width:250px;" src="{% static 'NewsApp/images/general.png' %}" alt="" /></a></div>
         <div class="b_125">
           <ul>
-            <li><a href="entertainment.html"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/entertainment.png' %}" alt="" /></a></li>
-            <li><a href="business.html"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/business.png' %}" alt="" /></a></li>
-            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/sports.png' %}" alt="" /></a></li>
-            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/music.png' %}" alt="" /></a></li>
-            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/science.png' %}" alt="" /></a></li>
-            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/politics.png' %}" alt="" /></a></li>
-            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/health.png' %}" alt="" /></a></li>
-            <li><a href="#"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/technology.png' %}" alt="" /></a></li>
+            <li><a href="entertainment"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/entertainment.png' %}" alt="" /></a></li>
+            <li><a href="business"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/business.png' %}" alt="" /></a></li>
+            <li><a href="sports"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/sports.png' %}" alt="" /></a></li>
+            <li><a href="music"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/music.png' %}" alt="" /></a></li>
+            <li><a href="science"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/science.png' %}" alt="" /></a></li>
+            <li><a href="politics"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/politics.png' %}" alt="" /></a></li>
+            <li><a href="health"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/health.png' %}" alt="" /></a></li>
+            <li><a href="technology"><img style="height: 125px; width:125px;" src="{% static 'NewsApp/images/technology.png' %}" alt="" /></a></li>
           </ul>
           <div class="clear"></div>
         </div>
